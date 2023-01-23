@@ -1,0 +1,17 @@
+@import "./assets/scss/font";
+
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: "Oswald", sans-serif;
+  height: 100%;
+}
+
+.container {
+  max-width: 1362px;
+  margin: 0 auto;
+  padding: 26px;
+}

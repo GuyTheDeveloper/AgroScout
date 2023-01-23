@@ -1,0 +1,50 @@
+//Oswald
+
+@font-face {
+  font-family: "Oswald";
+  font-display: swap;
+  font-weight: 200;
+  src: url("../fonts/OswaldExtraLight.woff2") format("woff2"),
+    url("../fonts/OswaldExtraLight.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Oswald";
+  font-display: swap;
+  font-weight: 300;
+  src: url("../fonts/OswaldLight.woff2") format("woff2"),
+    url("../fonts/OswaldLight.woff") format("woff");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Oswald";
+  font-display: swap;
+  font-weight: 400;
+  src: url("../fonts/OswaldRegular.woff2") format("woff2"),
+    url("../fonts/OswaldRegular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Oswald";
+  font-display: swap;
+  font-weight: 500;
+  src: url("../fonts/OswaldMedium.woff2") format("woff2"),
+    url("../fonts/OswaldMedium.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Oswald";
+  font-display: swap;
+  font-weight: 600;
+  src: url("../fonts/OswaldSemiBold.woff2") format("woff2"),
+    url("../fonts/OswaldSemiBold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Oswald";
+  font-display: swap;
+  font-weight: 700;
+  src: url("../fonts/OswaldBold.woff2") format("woff2"),
+    url("../fonts/OswaldBold.woff") format("woff");
+}
