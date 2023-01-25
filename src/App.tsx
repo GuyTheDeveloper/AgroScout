@@ -1,8 +1,13 @@
+import { Route, Routes } from "react-router-dom";
+import { MainLayout } from "./components/layouts";
+import { Home } from "./pages";
+
 export const App: React.FC = () => {
   return (
-    <div className="container">
-      logo
-      <div>nimalardir</div>
-    </div>
+    <MainLayout>
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
+    </MainLayout>
   );
 };
