@@ -1,7 +1,14 @@
 @import "../../../../assets/scss/variables/variables";
 
 .header {
-  background-color: $header-bg;
+  position: sticky;
+  top: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  box-shadow: 0px 0px 1500px $header-bg inset;
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
 
   &-wrapper {
     display: flex;
@@ -421,6 +428,15 @@
 
     &__drop {
       right: -30px;
+
+      &__link {
+        font-size: 18px;
+      }
+
+      &__link > span {
+        width: 33px;
+        height: 33px;
+      }
     }
   }
 }

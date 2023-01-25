@@ -23,8 +23,8 @@ import "./_header.scss";
 import { useState } from "react";
 
 const variants = {
-  open: { opacity: 1, x: 0 },
-  closed: { opacity: 0, x: "-100%" },
+  open: { opacity: 1, y: 0 },
+  closed: { opacity: 0, y: "-150%" },
 };
 
 export const Header: React.FC = () => {

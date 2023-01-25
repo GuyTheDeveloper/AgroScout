@@ -1,0 +1,249 @@
+@import "../../../assets/scss/variables/variables";
+
+.hero {
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.25),
+      rgba(0, 0, 0, 0.25)
+    ),
+    url("../../../assets/img/hero-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center;
+
+  &-wrapper {
+    background-image: url("../../../assets/img/hero-layer.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  &--line {
+    background: {
+      image: url("../../../assets/img/hero-decoration.svg");
+      repeat: no-repeat;
+      size: auto;
+      position: left 400px;
+    }
+  }
+
+  &__inner {
+    padding-top: 100px;
+  }
+
+  &__heading {
+    margin: 0 0 154px;
+    max-width: 663px;
+    @include font(300, 65px, 86px, #ffffff);
+  }
+
+  &__works {
+    display: flex;
+    align-items: center;
+    gap: 55px;
+
+    &__heading {
+      display: flex;
+      flex-direction: column;
+      @include font(300, 24px, 24px, #ffffff);
+    }
+
+    &__bold {
+      margin-bottom: 16px;
+      @include font(300, 44px, 48px, #ffffff);
+    }
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .hero {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.25),
+        rgba(0, 0, 0, 0.25)
+      ),
+      url("../../../assets/img/hero-bg.jpg");
+    background-position: center;
+
+    &--line {
+      background-size: 636px 117px;
+    }
+
+    &__heading {
+      margin-bottom: 85px;
+    }
+  }
+}
+
+@media only screen and (max-width: 786px) {
+  .hero {
+    background-color: transparent;
+    background-image: url("../../../assets/img/hero-bg-tablet.png");
+    background-size: cover;
+    background-position: top;
+
+    &-wrapper {
+      background-image: url("../../../assets/img/hero-layer-tablet.png");
+      background-size: cover;
+    }
+
+    &--line {
+      background-image: url("../../../assets/img/hero-decoration-tablet.svg");
+      background-size: 399px 50px;
+      background-position: left top 150px;
+    }
+
+    &__inner {
+      padding-top: 27px;
+    }
+
+    &__heading {
+      max-width: 337px;
+      margin-bottom: 78px;
+      @include font(400, 30px, 36px, #ffffff);
+    }
+
+    &__works {
+      gap: 30px;
+
+      &__heading {
+        font-size: 18px;
+        line-height: 18px;
+      }
+
+      &__bold {
+        margin-bottom: 6px;
+        font-size: 24px;
+        line-height: 24px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 620px) {
+  .hero {
+    &__heading {
+      margin-bottom: 55px;
+    }
+
+    &--line {
+      background-size: 315px;
+      background-position: left top 164px;
+    }
+  }
+}
+
+@media only screen and (max-width: 506px) {
+  .hero {
+    &__heading {
+      margin-bottom: 40px;
+      font-size: 25px;
+      line-height: 28px;
+    }
+  }
+}
+
+@media only screen and (max-width: 475px) {
+  .hero {
+    background-size: 718px 330px;
+    background-position: top right;
+
+    &-wrapper {
+      background-image: url("../../../assets/img/hero-layer-mobile.png");
+      background-position: top right;
+      background-size: 475px 330px;
+    }
+
+    &--line {
+      background-size: 425px 70px;
+      background-position: left top 420px;
+    }
+
+    &__heading {
+      margin-bottom: 55px;
+      font-size: 28px;
+      line-height: 34px;
+    }
+
+    &__inner {
+      padding-top: 330px;
+    }
+  }
+}
+
+@media only screen and (max-width: 433px) {
+  .hero {
+    background-size: 715px 300px;
+
+    &-wrapper {
+      background-size: 445px 300px;
+    }
+
+    &--line {
+      background-size: 360px 70px;
+    }
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .hero {
+    &--line {
+      background-size: 320px 70px;
+    }
+
+    &-wrapper {
+      background-size: 395px 300px;
+    }
+
+    &__works {
+      gap: 20px;
+
+      &__heading {
+        font-size: 14px;
+        line-height: 14px;
+      }
+
+      &__bold {
+        margin-bottom: 10px;
+        font-size: 18px;
+        line-height: 18px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 355px) {
+  .hero {
+    &__heading {
+      font-weight: 300;
+      font-size: 28px;
+      line-height: 34px;
+    }
+
+    &--line {
+      .container {
+        padding-left: 17px;
+        padding-right: 12px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 333px) {
+  .hero {
+    background-position: top right -89px;
+    background-size: 715px 286px;
+
+    &-wrapper {
+      background-size: 335px 286px;
+    }
+    &--line {
+      background-size: 280px;
+      background-position: left top 400px;
+    }
+
+    &__inner {
+      padding-top: 286px;
+    }
+  }
+}
