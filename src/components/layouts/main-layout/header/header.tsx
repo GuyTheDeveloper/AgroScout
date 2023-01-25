@@ -101,43 +101,46 @@ export const Header: React.FC = () => {
                       </span>
                       Главная
                     </Link>
-                    <Link className="header__drop__link" to="/">
+                    <Link className="header__drop__link" to="/entomophages">
                       <span>
                         <img src={headerEntomofag} alt="Home" />
                       </span>
                       Энтомофаги
                     </Link>
-                    <Link className="header__drop__link" to="/">
+                    <Link className="header__drop__link" to="/spraying">
                       <span>
                         <img src={headerSpraying} alt="Home" />
                       </span>
                       Опрыскивание
                     </Link>
-                    <Link className="header__drop__link" to="/">
+                    <Link
+                      className="header__drop__link"
+                      to="/cartography&monitoring"
+                    >
                       <span>
                         <img src={headerCartography} alt="Home" />
                       </span>
                       Картография и мониторинг
                     </Link>
-                    <Link className="header__drop__link" to="/">
+                    <Link className="header__drop__link" to="/catalog">
                       <span>
                         <img src={headerCatalog} alt="Home" />
                       </span>
                       Каталог продукции
                     </Link>
-                    <Link className="header__drop__link" to="/">
+                    <Link className="header__drop__link" to="/news">
                       <span>
                         <img src={headerNews} alt="Home" />
                       </span>
                       Новости
                     </Link>
-                    <Link className="header__drop__link" to="/">
+                    <Link className="header__drop__link" to="/about">
                       <span>
                         <img src={headerAbout} alt="Home" />
                       </span>
                       O компании
                     </Link>
-                    <Link className="header__drop__link" to="/">
+                    <Link className="header__drop__link" to="/contact-us">
                       <span>
                         <img src={headerDropPhone} alt="Home" />
                       </span>
