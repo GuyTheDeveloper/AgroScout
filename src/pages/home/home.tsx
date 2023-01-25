@@ -1,3 +1,5 @@
+import { Hero } from "../../components";
+
 export const Home: React.FC = () => {
-  return <div>bu Home Page</div>;
+  return <Hero />;
 };

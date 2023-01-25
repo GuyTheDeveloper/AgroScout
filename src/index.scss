@@ -8,7 +8,7 @@ html {
 body {
   margin: 0;
   height: 100%;
-  // background-color: $body-bg;
+  background-color: $body-bg;
   font-family: "Oswald", sans-serif;
 }
 
@@ -16,4 +16,10 @@ body {
   max-width: 1362px;
   margin: 0 auto;
   padding: 0 26px;
+}
+
+.large-container {
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 0;
 }
