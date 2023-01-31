@@ -1,5 +1,10 @@
-import { Hero } from "../../components";
+import { Advantages, Hero } from "../../components";
 
 export const Home: React.FC = () => {
-  return <Hero />;
+  return (
+    <div>
+      <Hero />
+      <Advantages />
+    </div>
+  );
 };
