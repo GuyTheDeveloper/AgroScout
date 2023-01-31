@@ -1,7 +1,7 @@
 @import "../../../../assets/scss/variables/variables";
 
 .header {
-  position: sticky;
+  // position: fixed;
   top: 0;
   right: 0;
   left: 0;
@@ -121,6 +121,7 @@
     padding-bottom: 44px;
     background-color: rgba(24, 24, 24, 0.95);
     opacity: 0;
+    z-index: 100;
 
     &--active {
       opacity: 1;
