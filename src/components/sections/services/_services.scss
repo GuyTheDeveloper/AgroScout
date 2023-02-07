@@ -1,0 +1,160 @@
+@import "../../../assets/scss/variables/variables";
+
+.services {
+  margin-top: 110px;
+  background: {
+    image: url("../../../assets/img/services-bg.png");
+    repeat: no-repeat;
+    position: center;
+    size: auto;
+  }
+
+  &-wrapper {
+    padding-top: 153px;
+  }
+
+  &__heading {
+    margin: 0;
+    font-family: "Oswald";
+    @include font(300, 72px, 48px, #ffffff);
+  }
+
+  &__text {
+    max-width: 593px;
+    margin-top: 50px;
+    margin-bottom: 70px;
+    font-family: "Oswald";
+    @include font(200, 30px, 52px, #ffffff);
+  }
+
+  &__btn {
+    display: inline-block;
+    width: 288px;
+    margin: 0;
+    margin-bottom: 157px;
+    padding: 14px 0 20px;
+    background-color: transparent;
+    color: $green;
+    text-align: center;
+    border: 1px solid $green;
+    @include font(300, 24px, 32px, $green);
+  }
+}
+
+@media only screen and (max-width: 1240px) {
+  .services {
+    background-position: center right;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .services {
+    background-position: center right -270px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .services {
+    margin-top: 80px;
+    background-image: url("../../../assets/img/services-bg-tablet.png");
+    background-position: center;
+    background-size: 768px 381px;
+
+    &-wrapper {
+      padding-top: 72px;
+    }
+
+    &__heading {
+      font-weight: 400;
+      font-size: 30px;
+      line-height: 30px;
+    }
+
+    &__text {
+      max-width: 321px;
+      margin-top: 30px;
+      margin-bottom: 50px;
+      font-size: 16px;
+      line-height: 31px;
+    }
+
+    &__btn {
+      max-width: 223px;
+      margin-bottom: 86px;
+      padding: 16px 42px;
+      font-size: 16px;
+      line-height: 20px;
+    }
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .services {
+    margin-top: 60px;
+    background-position: center right -50px;
+
+    &__btn {
+      margin-bottom: 70px;
+    }
+  }
+}
+
+@media only screen and (max-width: 475px) {
+  .services {
+    background-position: center right;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .services {
+    background-image: url("../../../assets/img/services-bg-mobile.png");
+    background-size: 375px 100%;
+    background-position: top center;
+
+    &-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &-wrapper {
+      padding-top: 220px;
+    }
+
+    &__text {
+      text-align: center;
+      margin-top: 25px;
+      margin-bottom: 35px;
+    }
+
+    &__btn {
+      margin-bottom: 42px;
+    }
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .services {
+    background-size: 320px 440px;
+
+    &__heading {
+      font-size: 22px;
+      line-height: 22px;
+    }
+
+    &__text {
+      margin: 20px 0 30px;
+      font-size: 12px;
+      line-height: 24px;
+    }
+
+    &__btn {
+      max-width: 264px;
+      width: 100%;
+      padding-block: 20px;
+      margin-bottom: 42px;
+      font-size: 16px;
+      line-height: 16px;
+    }
+  }
+}
