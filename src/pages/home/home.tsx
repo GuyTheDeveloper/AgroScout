@@ -1,4 +1,4 @@
-import { About, Advantages, Hero, Services } from "../../components";
+import { About, Advantages, Hero, Regions, Services } from "../../components";
 
 export const Home: React.FC = () => {
   return (
@@ -7,6 +7,7 @@ export const Home: React.FC = () => {
       <Advantages />
       <Services />
       <About />
+      <Regions />
     </div>
   );
 };
