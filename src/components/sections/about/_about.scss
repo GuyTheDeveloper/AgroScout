@@ -32,6 +32,7 @@
       rgba(24, 24, 24, 0.63) 100%
     );
     transition: all 485ms ease-in;
+    z-index: 10000;
 
     &--active {
       height: 65px;
@@ -39,6 +40,7 @@
     }
 
     &__img--active {
+      display: block;
       transform: rotate(180deg);
     }
   }

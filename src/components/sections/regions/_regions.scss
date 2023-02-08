@@ -1,0 +1,163 @@
+@import "../../../assets/scss/variables/variables";
+
+.regions {
+  background: {
+    image: url("../../../assets/img/regions-bg.svg");
+    repeat: no-repeat;
+    size: auto;
+    position: top -362px right -130px;
+  }
+
+  &-wrapper {
+    display: flex;
+    align-items: flex-start;
+    gap: 153px;
+    padding-bottom: 115px;
+  }
+
+  &__subheading {
+    margin-bottom: 70px;
+  }
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    @include font(200, 24px, 39px, #ffffff);
+  }
+}
+
+@media only screen and (min-width: 1401px) {
+  .regions {
+    background-position: top -362px right -255px;
+  }
+}
+
+@media only screen and (max-width: 1400px) {
+  .regions {
+    background-size: 1000px;
+    background-position: top -362px right -250px;
+  }
+}
+
+@media only screen and (max-width: 1240px) {
+  .regions {
+    background-size: auto;
+    background-position: top -200px center;
+
+    &-wrapper {
+      padding-bottom: 35px;
+      padding-top: 620px;
+      justify-content: flex-end;
+    }
+  }
+}
+
+@media only screen and (max-width: 1060px) {
+  .regions {
+    background-position: top -200px left 100px;
+
+    &-wrapper {
+      padding-top: 625px;
+      justify-content: center;
+    }
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .regions {
+    background-position: top -200px left 15px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .regions {
+    background-position: top -210px left 75px;
+    background-size: contain;
+
+    &__subheading {
+      @include font(400, 62px, 64px, rgba(255, 255, 255, 0.2));
+    }
+
+    &-wrapper {
+      padding-top: 405px;
+    }
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .regions {
+    background-position: top -150px left 75px;
+
+    &-wrapper {
+      gap: 100px;
+    }
+  }
+}
+
+@media only screen and (max-width: 556px) {
+  .regions {
+    background-position: top -85px left 75px;
+
+    &-wrapper {
+      padding-top: 310px;
+    }
+
+    &__item {
+      @include font(300, 16px, 27px, #ffffff);
+      gap: 5px;
+    }
+  }
+}
+
+@media only screen and (max-width: 446px) {
+  .regions {
+    background-position: top -90px left 55px;
+
+    &__subheading {
+      font-size: 45px;
+    }
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .regions {
+    &-wrapper {
+      gap: 30px;
+    }
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .regions {
+    background: {
+      image: url("../../../assets/img/regions-bg-mobile.svg");
+      repeat: no-repeat;
+      size: auto;
+      position: top -75px center;
+    }
+
+    .container {
+      padding-inline: 16px;
+    }
+
+    &-wrapper {
+      padding-top: 230px;
+      gap: 17px;
+    }
+
+    &__item {
+      @include font(300, 14px, 27px, #ffffff);
+    }
+
+    &__heading {
+      top: 20px;
+    }
+  }
+}
