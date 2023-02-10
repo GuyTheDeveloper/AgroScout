@@ -1,4 +1,11 @@
-import { About, Advantages, Hero, Regions, Services } from "../../components";
+import {
+  About,
+  Advantages,
+  Hero,
+  Partners,
+  Regions,
+  Services,
+} from "../../components";
 
 export const Home: React.FC = () => {
   return (
@@ -8,6 +15,7 @@ export const Home: React.FC = () => {
       <Services />
       <About />
       <Regions />
+      <Partners />
     </div>
   );
 };
