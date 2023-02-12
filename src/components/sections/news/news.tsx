@@ -44,7 +44,7 @@ export const News: React.FC = () => {
               clickable: true,
             }}
             slidesPerView={2}
-            spaceBetween={20}
+            spaceBetween={27}
             loop={true}
           >
             <SwiperSlide>
