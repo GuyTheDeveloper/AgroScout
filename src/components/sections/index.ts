@@ -4,3 +4,4 @@ export * from "./services";
 export * from "./about";
 export * from "./regions";
 export * from "./partners";
+export * from "./news";

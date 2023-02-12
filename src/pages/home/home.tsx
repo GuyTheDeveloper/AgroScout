@@ -2,6 +2,7 @@ import {
   About,
   Advantages,
   Hero,
+  News,
   Partners,
   Regions,
   Services,
@@ -16,6 +17,7 @@ export const Home: React.FC = () => {
       <About />
       <Regions />
       <Partners />
+      <News />
     </div>
   );
 };
