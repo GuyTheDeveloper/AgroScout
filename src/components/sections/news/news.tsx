@@ -33,44 +33,6 @@ export const News: React.FC = () => {
               Читать полностью
             </Link>
           </div>
-
-          <div className="news__card">
-            <div className="news__card__img">
-              <img src={newsImage1} width={374} height={253} alt="" />
-            </div>
-            <h3 className="news__card__heading">
-              Дроны – будущее сельского хозяйства
-            </h3>
-            <p className="news__card__text">
-              Новые технологии не обходят стороной и самую консервативную
-              отрасль – сельское хозяйство. Согласно прогнозам международной
-              общественной организации Association for Unmanned Vehicle Systems
-              International, в скором времени агросектор станет крупнейшим
-              потребителем дронов – беспилотных летательных аппаратов (БПЛА).
-            </p>
-            <Link to="/" className="news__card__link">
-              Читать полностью
-            </Link>
-          </div>
-
-          <div className="news__card">
-            <div className="news__card__img">
-              <img src={newsImage1} width={374} height={253} alt="" />
-            </div>
-            <h3 className="news__card__heading">
-              Дроны – будущее сельского хозяйства
-            </h3>
-            <p className="news__card__text">
-              Новые технологии не обходят стороной и самую консервативную
-              отрасль – сельское хозяйство. Согласно прогнозам международной
-              общественной организации Association for Unmanned Vehicle Systems
-              International, в скором времени агросектор станет крупнейшим
-              потребителем дронов – беспилотных летательных аппаратов (БПЛА).
-            </p>
-            <Link to="/" className="news__card__link">
-              Читать полностью
-            </Link>
-          </div>
         </div>
 
         <div className="news__swiper-container">
