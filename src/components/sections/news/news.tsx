@@ -45,6 +45,16 @@ export const News: React.FC = () => {
             }}
             slidesPerView={2}
             spaceBetween={27}
+            breakpoints={{
+              320: {
+                slidesPerView: 1,
+                spaceBetween: 0,
+              },
+              675: {
+                slidesPerView: 2,
+                spaceBetween: 27,
+              },
+            }}
             loop={true}
           >
             <SwiperSlide>
