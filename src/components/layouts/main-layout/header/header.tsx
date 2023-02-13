@@ -38,7 +38,7 @@ export const Header: React.FC = () => {
             <Link to="/" className="header__logo">
               <img src={logo} width={72} height={69} alt="AgroScout" />
             </Link>
-            <a href="tel:+7861 21791 18" className="header__left__phone">
+            <a href="tel:78612179118" className="header__left__phone">
               <img src={headerPhone} alt="phone icon" />
               +7861 21791 18
             </a>
