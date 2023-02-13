@@ -1,4 +1,5 @@
 import { Outlet } from "react-router-dom";
+import { Footer } from "./footer";
 import { Header } from "./header";
 
 export const MainLayout: React.FC<{ children: React.ReactNode }> = ({
@@ -8,6 +9,7 @@ export const MainLayout: React.FC<{ children: React.ReactNode }> = ({
     <div>
       <Header />
       {children}
+      <Footer />
     </div>
   );
 };

@@ -1,0 +1,88 @@
+@import "../../../../assets/scss/variables/variables";
+
+.footer {
+  background-color: $header-bg;
+  border-top: 1px solid $green;
+
+  &-wrapper,
+  &__left,
+  &__right,
+  &__nav {
+    display: flex;
+    align-items: center;
+  }
+
+  &-wrapper {
+    justify-content: space-between;
+    padding: 20px 0 10px;
+  }
+
+  &__left {
+    gap: 11px;
+  }
+
+  &__logo {
+    display: block;
+  }
+
+  &__tel {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    @include font(300, 18px, 22px, #ffffff);
+    text-decoration: none;
+
+    &::before {
+      content: "";
+      width: 26px;
+      height: 26px;
+      background: {
+        image: url("../../../../assets/img/header-phone.svg");
+        repeat: no-repeat;
+        size: auto;
+        position: center;
+      }
+    }
+  }
+
+  &__right {
+    gap: 22px;
+  }
+
+  &__text {
+    margin: 0;
+    @include font(300, 18px, 18px, #ffffff);
+  }
+
+  &__nav {
+    gap: 19px;
+  }
+}
+
+@media only screen and (max-width: 675px) {
+  .footer {
+    padding: 16px 0 49px;
+    &-wrapper,
+    &__left,
+    &__right {
+      flex-direction: column;
+    }
+
+    &-wrapper {
+      gap: 20px;
+    }
+
+    &__left {
+      gap: 4px;
+    }
+
+    &__right {
+      gap: 30px;
+    }
+
+    &__logo {
+      width: 110px;
+      height: 106px;
+    }
+  }
+}
