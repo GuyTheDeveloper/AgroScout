@@ -33,7 +33,7 @@
     }
 
     &__img::before {
-      bottom: 0px;
+      bottom: 0;
       left: 0px;
       border-bottom: 1px solid $green;
       border-left: 1px solid $green;
@@ -41,7 +41,7 @@
 
     &__img::after {
       right: 0px;
-      top: 0px;
+      top: 0;
       border-top: 1px solid $green;
       border-right: 1px solid $green;
     }
@@ -60,6 +60,7 @@
       position: relative;
       display: inline-block;
       align-self: flex-start;
+      padding-bottom: 12px;
       @include font(300, 16px, 16px, $green);
       text-decoration: none;
     }
@@ -67,7 +68,7 @@
     &__link::after {
       content: "";
       position: absolute;
-      bottom: -12px;
+      bottom: 0;
       left: 0;
       display: block;
       width: 100%;
@@ -108,6 +109,86 @@
 
       & > .swiper-pagination-bullet-active {
         background-color: #ffffff;
+      }
+    }
+
+    &__card {
+      &__heading {
+        margin: 40px 0 30px;
+        font-size: 20px;
+        line-height: 20px;
+      }
+
+      &__text {
+        font-size: 16px;
+        line-height: 27px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 674px) {
+  .news {
+    &__card {
+      &__img::after {
+        right: 62px;
+      }
+
+      &__img::before {
+        left: 62px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .news {
+    &__card {
+      &__img::after {
+        right: 20px;
+      }
+
+      &__img::before {
+        left: 20px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 475px) {
+  .news {
+    &__card {
+      &__img::after {
+        right: 0;
+      }
+
+      &__img::before {
+        left: 0;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .news {
+    .container {
+      padding-inline: 15px;
+    }
+
+    &__card {
+      &__img {
+        padding: 18px;
+      }
+
+      &__img::before,
+      &__img::after {
+        width: 103px;
+        height: 103px;
+      }
+      &__img > img {
+        max-width: 262px;
+        width: 100%;
+        height: 224px;
       }
     }
   }
